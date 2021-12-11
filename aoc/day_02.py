@@ -18,7 +18,7 @@ def plan_route(instructions: List[str]):
 
 
 if __name__ == "__main__":
-    with open("data/02.txt", "r") as f:
+    with open("./data/02.txt", "r") as f:
         instructions = f.read().splitlines()
 
     pos, depth = plan_route(instructions)
