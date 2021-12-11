@@ -9,12 +9,11 @@
 
 ;; Define the publishing project
 (setq org-publish-project-alist
-      (list
-       (list "org-files"
-             :recursive t
-             :base-directory "./"
-             :publishing-directory "./"
-             :publishing-function 'org-md-publish-to-md)))
+      (list '("org-files"
+              :recursive t
+              :base-directory "./"
+              :publishing-directory "./"
+              :publishing-function 'org-md-publish-to-md)))
 
 (defun my-org-confirm-babel-evaluate (lang body)
   "Do not ask for confirmation based on LANG. Argument BODY is unused."
