@@ -5,17 +5,19 @@
 My implementations of the Advent of Code puzzles.
 
 My answers are calculated using Github Actions. Microsoft robots kneel before my
-code and execute their orders. After the robots finish their duties, like good
-robots they are, they are ordered to write a report in a human-friendly way.
-After all, it is US who want to understand what the hell happened in the field.
-Because of that, their orders is to pick an =org= formatted document, and fill
-the blanks with each battle outcome. Namely, the answer they get for each Advent
-of Code exercise.
+code and execute their orders. After the robots finish their duties---like the
+good robots that they are---they write a report in a human-friendly format,
+Markdown---the lingua franca of the Github Kingdom. After all, it is US, humans,
+who want to understand what the hell happened in the field.
 
-Finally, the outcome of the computing battle is rendered below in Markdown
-format. The lingua franca of the Github Kingdom. Some sample answers can be
-found below behind a strong layer of HTML+Markdown magic kindly executed by the
-generous Microsoft robot army.
+In particular, their orders are:
+1. Pick an =org= formatted document
+2. Fill (compute) the blanks with each battle outcome (Day in the Advent Code
+   calendar).
+3. Render the report using Markdown
+
+Sample answers can be found below behind a strong layer of HTML+Markdown magic
+kindly executed by the generous Microsoft robot army.
 
 * Setup
 Execute the following to develop and test my repository.
