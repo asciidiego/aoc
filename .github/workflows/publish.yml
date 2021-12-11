@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@master
         with:
           fetch-depth: 1
-      - name: build emacs
-        uses: docker://iquiw/alpine-emacs
-        with:
-          args: ./build.sh
+      - name: Build docker images
+        run: docker build --rm . --file Dockerfile -t local
+      - name: Create Markdown files
+        run: docker run -v $PWD:/opt/OrgFiles local publish.el
       - name: Commit new README file
         run: |
           git config user.name "Microsoft Army"

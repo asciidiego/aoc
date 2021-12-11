@@ -5,7 +5,6 @@
 (org-babel-do-load-languages
     'org-babel-load-languages
     '((python . t)
-      ;;(dot . t)
       (shell . t)))
 
 ;; Define the publishing project
