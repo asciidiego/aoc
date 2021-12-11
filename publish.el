@@ -18,8 +18,8 @@
              :publishing-function 'org-md-publish-to-md)))
 
 (defun my-org-confirm-babel-evaluate (lang body)
-  "Do not ask for confirmation when LANG is python. Argument BODY is unused."
-  (not (string= lang "python")))  ; don't ask for python
+  "Do not ask for confirmation based on LANG. Argument BODY is unused."
+  (not (string= lang "shell")))
 (setq org-confirm-babel-evaluate #'my-org-confirm-babel-evaluate)
 
 ;; Generate the output
