@@ -11,10 +11,10 @@ Markdown---the lingua franca of the Github Kingdom. After all, it is US, humans,
 who want to understand what the hell happened in the field.
 
 In particular, their orders are:
-1. Pick an =org= formatted document
-2. Fill (compute) the blanks with each battle outcome (Day in the Advent Code
+1. Pick an =org= formatted document.
+2. Fill (compute) the blanks with each battle outcome (Day in the Advent Code.
    calendar).
-3. Render the report using Markdown
+3. Render the report using Markdown.
 
 Sample answers can be found below behind a strong layer of HTML+Markdown magic
 kindly executed by the generous Microsoft robot army.
