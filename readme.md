@@ -39,12 +39,5 @@ Execute the following to develop and test my repository.
     Depth increments: 1
 
 </code>
-
-<code>
-
-    0
-
-</code>
-
 </details>
 
