@@ -1,0 +1,9 @@
+#+TITLE: Advent of Code
+* Advent of Code
+
+My implementations of the Advent of Code puzzles.
+
+<details>
+<summary>Day 1</summary>
+SPOILER ANSWER
+</details>
