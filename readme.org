@@ -13,10 +13,9 @@ the blanks with each battle outcome. Namely, the answer they get for each Advent
 of Code exercise.
 
 Finally, the outcome of the computing battle is rendered below in Markdown
-format. The lingua franca of the Github Kingdom. But, since I do not want to
-/spoil/ the fun for anyone reading this, the answers are hidden behind a strong
-layer of HTML+Markdown magic kindly executed by the generous Microsoft robot
-army.
+format. The lingua franca of the Github Kingdom. Some sample answers can be
+found below behind a strong layer of HTML+Markdown magic kindly executed by the
+generous Microsoft robot army.
 
 * Setup
 Execute the following to develop and test my repository.
