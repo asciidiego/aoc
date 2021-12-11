@@ -30,7 +30,6 @@ pip install -Ue .
 
 <details>
 <summary>Day 1</summary>
-<code>
 #+begin_src shell :exports both :results verbatim
 python3 aoc/day_01.py
 #+end_src
@@ -39,5 +38,4 @@ python3 aoc/day_01.py
 : Executing for sample=['0', '3', '2']
 : Depth increments: 1
 
-</code>
 </details>
