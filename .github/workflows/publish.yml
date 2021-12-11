@@ -1,0 +1,25 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: build emacs
+        uses: docker://iquiw/alpine-emacs
+        with:
+          args: ./build.sh
+      - name: Commit new README file
+        run: |
+          git config user.name Microsoft Army
+          git config user.email github-actions@github.com
+          git add readme.md
+          git commit -m "docs: report battle results"
+          git push
