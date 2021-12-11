@@ -31,6 +31,6 @@ Execute the following to develop and test my repository.
 
 <details>
 <summary>Day 1</summary>
-SPOILER ANSWER
+
 </details>
 
