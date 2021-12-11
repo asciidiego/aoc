@@ -30,5 +30,11 @@ pip install -Ue .
 
 <details>
 <summary>Day 1</summary>
-SPOILER ANSWER
+#+begin_src shell :exports results
+python aoc/day_01.py
+#+end_src
+
+#+RESULTS:
+: 0
+
 </details>

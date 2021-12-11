@@ -17,5 +17,10 @@
              :publishing-directory "./"
              :publishing-function 'org-md-publish-to-md)))
 
+(defun my-org-confirm-babel-evaluate (lang body)
+  "Do not ask for confirmation when LANG is python. Argument BODY is unused."
+  (not (string= lang "python")))  ; don't ask for python
+(setq org-confirm-babel-evaluate #'my-org-confirm-babel-evaluate)
+
 ;; Generate the output
 (org-publish-all t)

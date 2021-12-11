@@ -23,3 +23,8 @@ def depths(raw_depths: List[str]) -> int:
     input_as_ints = map(int, raw_depths)
     depth_increments, _ = reduce(depth_reducer, input_as_ints, (0, next(input_as_ints)))
     return depth_increments
+
+
+if __name__ == "__main__":
+    print(depths([]))
+
