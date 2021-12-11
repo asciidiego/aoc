@@ -18,6 +18,9 @@ format. The lingua franca of the Github Kingdom. But, since I do not want to
 layer of HTML+Markdown magic kindly executed by the generous Microsoft robot
 army.
 
+
+# Battle Reports
+
 <details>
 <summary>Day 1</summary>
 SPOILER ANSWER

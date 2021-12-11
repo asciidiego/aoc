@@ -19,6 +19,8 @@ layer of HTML+Markdown magic kindly executed by the generous Microsoft robot
 army.
 
 
+* Battle Reports
+
 <details>
 <summary>Day 1</summary>
 SPOILER ANSWER
