@@ -37,13 +37,7 @@ python3 aoc/day_01.py
 
 #+RESULTS:
 : Executing for sample=['0', '3', '2']
-: 1
+: Depth increments: 1
 
 </code>
-
-<code>
-#+RESULTS:
-: 0
-</code>
-
 </details>
