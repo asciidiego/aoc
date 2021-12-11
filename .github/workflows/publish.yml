@@ -18,7 +18,7 @@ jobs:
           args: ./build.sh
       - name: Commit new README file
         run: |
-          git config user.name Microsoft Army
+          git config user.name "Microsoft Army"
           git config user.email github-actions@github.com
           git add readme.md
           git commit -m "docs: report battle results"
