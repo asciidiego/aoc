@@ -30,11 +30,20 @@ pip install -Ue .
 
 <details>
 <summary>Day 1</summary>
-#+begin_src shell :exports results
+<code>
+#+begin_src shell :exports both :results verbatim
 python3 aoc/day_01.py
 #+end_src
 
 #+RESULTS:
+: Executing for sample=['0', '3', '2']
+: 1
+
+</code>
+
+<code>
+#+RESULTS:
 : 0
+</code>
 
 </details>
