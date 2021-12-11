@@ -31,6 +31,20 @@ Execute the following to develop and test my repository.
 
 <details>
 <summary>Day 1</summary>
+<code>
+
+    python3 aoc/day_01.py
+
+    Executing for sample=['0', '3', '2']
+    Depth increments: 1
+
+</code>
+
+<code>
+
+    0
+
+</code>
 
 </details>
 
