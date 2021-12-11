@@ -18,9 +18,6 @@ def plan_route(instructions: List[str]):
 
 
 if __name__ == "__main__":
-    with open("./data/02.txt", "r") as f:
-        instructions = f.read().splitlines()
-
-    pos, depth = plan_route(instructions)
-
-    print(f"Answer: {pos * depth}")
+    instructions = ["forward 2", "down 3", "up 2"]
+    print(f"Executing for {instructions=}")
+    print(f"Position and depth = {plan_route(instructions)}")
