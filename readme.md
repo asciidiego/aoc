@@ -19,6 +19,14 @@ layer of HTML+Markdown magic kindly executed by the generous Microsoft robot
 army.
 
 
+# Setup
+
+Execute the following to develop and test my repository.
+
+    pip install -r *.txt
+    pip install -Ue .
+
+
 # Battle Reports
 
 <details>

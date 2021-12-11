@@ -18,6 +18,13 @@ format. The lingua franca of the Github Kingdom. But, since I do not want to
 layer of HTML+Markdown magic kindly executed by the generous Microsoft robot
 army.
 
+* Setup
+Execute the following to develop and test my repository.
+
+#+begin_src shell :exports code
+pip install -r *.txt
+pip install -Ue .
+#+end_src
 
 * Battle Reports
 
