@@ -26,5 +26,6 @@ def depths(raw_depths: List[str]) -> int:
 
 
 if __name__ == "__main__":
-    print(depths([]))
-
+    sample = ["0", "3", "2"]
+    print(f"Executing for {sample=}")
+    print(f"Depth increments: {depths(sample)}")
