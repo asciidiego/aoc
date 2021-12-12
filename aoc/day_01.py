@@ -25,6 +25,24 @@ def depths(raw_depths: List[str]) -> int:
     return depth_increments
 
 
+def sliding_depths(raw_depths: List[str]) -> int:
+    from itertools import islice
+
+    # (map #(reduce + %) (partition 3 1 data)) <- clojure fn
+    depths_input = [*map(int, raw_depths)]
+
+    window_size = 3
+    sliding_window_range = range(0, len(raw_depths) - window_size + 1)
+    sliding_window = (
+        [*islice(depths_input, i, i + window_size)] for i in sliding_window_range
+    )
+
+    sliding_window_sum = map(sum, sliding_window)
+    sliding_window_as_strings = map(str, sliding_window_sum)
+
+    return depths([*sliding_window_as_strings])
+
+
 if __name__ == "__main__":
     sample = ["0", "3", "2"]
     print(f"Executing for {sample=}")
