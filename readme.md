@@ -41,3 +41,13 @@ Execute the following to develop and test my repository.
 
 </details>
 
+<details>
+<summary>Day 2</summary>
+
+    python3 aoc/day_02.py
+
+    Executing for instructions=['forward 2', 'down 3', 'up 2']
+    Position and depth = (2, 1)
+
+</details>
+
