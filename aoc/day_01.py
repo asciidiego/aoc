@@ -38,6 +38,6 @@ def sliding_depths(raw_depths: List[str]) -> int:
 
 
 if __name__ == "__main__":
-    sample = ["0", "3", "2"]
+    sample = ["0", "3", "2", "4"]
     print(f"Executing for {sample=}")
     print(f"Depth increments: {depths(sample)}")
