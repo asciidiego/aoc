@@ -36,8 +36,8 @@ Execute the following to develop and test my repository.
 
     python3 aoc/day_01.py
 
-    Executing for sample=['0', '3', '2']
-    Depth increments: 1
+    Executing for sample=['0', '3', '2', '4']
+    Depth increments: 2
 
 </details>
 
