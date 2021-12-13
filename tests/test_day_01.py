@@ -5,7 +5,8 @@ from aoc.day_01 import depths, sliding_depths
 def test_simple_positive_case():
     "Part 1"
     empty = []
-    assert depths(empty) == 0
+    one = ["0"]
+    assert depths(empty) == depths(one) == 0
 
     x = ["0", "1"]
     assert depths(x) == 1
