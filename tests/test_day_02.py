@@ -5,10 +5,13 @@ def test_simple_case():
     instructions = [
         "forward 2",
         "down 3",
+        "forward 2",
     ]
 
-    position, depth = plan_route(instructions)
-    assert position * depth == 6
+    position, depth, aim = plan_route(instructions)
+    assert position == 4
+    assert depth == 6
+    assert aim == 3
 
 
 def test_sample_case():
@@ -20,5 +23,7 @@ def test_sample_case():
         "down 8",
         "forward 2",
     ]
-    position, depth = plan_route(instructions)
-    assert position * depth == 150
+    position, depth, aim = plan_route(instructions)
+    assert position == 15
+    assert depth == 60
+    assert position * depth == 900
