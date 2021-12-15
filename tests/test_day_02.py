@@ -1,6 +1,13 @@
 from aoc.day_02 import plan_route
 
 
+def test_simple_case_v1():
+    instructions = ["forward 10"]
+
+    position, _ = plan_route(instructions, version="v1")
+    assert position == 10
+
+
 def test_simple_case():
     instructions = [
         "forward 2",

@@ -25,8 +25,13 @@ def plan_route(instructions: List[str], version="v2"):
         return (prev_pos, prev_depth, prev_aim - amount)
 
     planning_algorithms = {"v1": _plan_route_v1, "v2": _plan_route_v2}
+    initial_values = {"v1": (0, 0), "v2": (0, 0, 0)}
 
-    return reduce(planning_algorithms[version], instructions, (0, 0, 0))
+    return reduce(
+        planning_algorithms[version],
+        instructions,
+        initial_values[version],
+    )
 
 
 if __name__ == "__main__":
