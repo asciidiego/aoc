@@ -56,16 +56,10 @@ Execute the following to develop and test my repository.
 <details>
 <summary>Day 3</summary>
 
-    exec 2>&1
     clojure -X day-03/run
-    :
 
-    Opening data from data/03.txt
-    Execution error (FileNotFoundException) at java.io.FileInputStream/open0 (FileInputStream.java:-2).
-    data/03.txt (No such file or directory)
-    
-    Full report at:
-    /tmp/clojure-1701274686682340357.edn
+    [part-1] Answer = 198
+    [part-2] Answer = 230
 
 </details>
 
