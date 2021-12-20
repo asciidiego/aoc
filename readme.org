@@ -42,3 +42,10 @@ python3 aoc/day_01.py
 python3 aoc/day_02.py
 #+end_src
 </details>
+
+<details>
+<summary>Day 3</summary>
+#+begin_src shell :exports both :results verbatim
+clojure -X day-03/run
+#+end_src
+</details>
