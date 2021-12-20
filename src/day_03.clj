@@ -1,7 +1,9 @@
 (ns day-03
   (:require [clojure.string :as str]))
 
-(def data (str/split-lines (slurp "data/03.txt")))
+(def data-loc "data/03.txt")
+(def data (str/split-lines (slurp (do (println "Opening data from" data-loc)
+                                      data-loc))))
 
 (defn bit-accumulator [acc [i chr]]
   (let [idx (mod i (count acc))]
@@ -54,7 +56,6 @@
         (inc pos))))))
 
 
-(defn run [opts]
-  (println "[part-1] Answer =" (* (calc-rate data :rate-type "gamma")
-                                  (calc-rate data :rate-type "epsilon")))
-  (println "[part-2] Answer =" (reduce * (find-carbon-coeff data))))
+(println "[part-1] Answer =" (* (calc-rate data :rate-type "gamma")
+			  (calc-rate data :rate-type "epsilon")))
+(println "[part-2] Answer =" (reduce * (find-carbon-coeff data)))
