@@ -56,6 +56,7 @@
         (inc pos))))))
 
 
-(println "[part-1] Answer =" (* (calc-rate data :rate-type "gamma")
-			  (calc-rate data :rate-type "epsilon")))
-(println "[part-2] Answer =" (reduce * (find-carbon-coeff data)))
+(defn run [opts]
+  (println "[part-1] Answer =" (* (calc-rate data :rate-type "gamma")
+                                  (calc-rate data :rate-type "epsilon")))
+  (println "[part-2] Answer =" (reduce * (find-carbon-coeff data))))
