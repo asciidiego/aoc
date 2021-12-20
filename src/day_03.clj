@@ -2,8 +2,20 @@
   (:require [clojure.string :as str]))
 
 (def data-loc "data/03.txt")
-(def data (str/split-lines (slurp (do (println "Opening data from" data-loc)
-                                      data-loc))))
+; (def data (str/split-lines (slurp (do (println "Opening data from" data-loc)
+;                                       data-loc))))
+(def data ["00100"
+           "11110"
+           "10110"
+           "10111"
+           "10101"
+           "01111"
+           "00111"
+           "11100"
+           "10000"
+           "11001"
+           "00010"
+           "01010"])
 
 (defn bit-accumulator [acc [i chr]]
   (let [idx (mod i (count acc))]
