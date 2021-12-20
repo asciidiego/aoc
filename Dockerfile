@@ -6,6 +6,7 @@ WORKDIR /opt/OrgFiles
 
 RUN apk add emacs-nox
 RUN apk add python3
+RUN apk add clojure --repository=https://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 COPY *.el /opt/
 
