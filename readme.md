@@ -53,3 +53,10 @@ Execute the following to develop and test my repository.
 
 </details>
 
+<details>
+<summary>Day 3</summary>
+
+    clojure -X day-03/run
+
+</details>
+
