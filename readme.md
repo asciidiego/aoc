@@ -56,7 +56,7 @@ Execute the following to develop and test my repository.
 <details>
 <summary>Day 3</summary>
 
-    clojure -X day-03/run
+    clojure src/day_03.clj
 
 </details>
 
