@@ -68,10 +68,10 @@
 
 (defn negate-coordinates
   "Return a list of unmarked coordinates given a sequence of coordinates"
-  [victory-line]
+  [coordinates]
   (for [i (range 5)
         j (range 5)
-        :when (not (some #(= % [i j]) victory-line))]
+        :when (not (some #(= % [i j]) coordinates))]
     [i j]))
 
 (defn main []
