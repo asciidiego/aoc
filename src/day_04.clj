@@ -2,12 +2,6 @@
   (:require [clojure.string :as str]))
 
 (def raw-data (slurp "./data/04.txt"))
-
-;; The first line of the data is the hands that are being drawn
-;; After that, each new board represents a bingo board.
-;;
-;; - [x] 1st Problem -> Get the hands as a vector
-
 (def data (->> raw-data
                str/split-lines
                (remove #(= "" %))))
@@ -16,7 +10,6 @@
                first
                (#(str/split % #","))))
 
-;; - [x] 2nd Problem -> Get all the boards
 (def boards (->> data
                  rest ;; first line is the hand; we can skip it!
                  (partition 5 5)
@@ -26,6 +19,31 @@
                                       (remove #(= % ""))
                                       vec))
                                board)))))
+
+(defn find-number-in-board
+  "Given a board and a number, return the coordinates/location of the number if it
+  is found in the board. Otherwise, return nil."
+  [board number]
+  (first (for [[row-num row] (map-indexed vector board)
+               :let [match-col (.indexOf row number)]
+               :when (not= match-col -1)]
+           [row-num match-col])))
+
+(defn run-number-through-board
+  "Given a board-timeline pair and a hand number it appends the coordinates of the
+  number if found on the board. Otherwise, it returns the input timeline as is.
+  "
+  [[board timeline] hand-number]
+  (if-let [match (find-number-in-board board hand-number)]
+    (conj timeline match)
+    timeline))
+
+;; The first line of the data is the hands that are being drawn
+;; After that, each new board represents a bingo board.
+;;
+;; - [x] 1st Problem -> Get the hands as a vector
+
+;; - [x] 2nd Problem -> Get all the boards
 
 ;; - [ ] 3rd (and last) problem -> how to compute a bingo victory?
 ;; hmmm... probably need to cut this problem a bit more... reduce
@@ -57,17 +75,6 @@
 ;;      Thus, if a given number is found when traversing the board, you can stop
 ;;      the traversal.
 
-(defn find-number-in-board
-  "Given a board and a number, return the coordinates/location of the number if it
-  is found in the board. Otherwise, return nil."
-  [board number]
-  (reduce (fn [_ [row-num row]]
-            (let [match-col (.indexOf row number)]
-              (when (not= match-col -1)
-                (reduced [row-num match-col]))))
-          nil
-          (map-indexed vector board)))
-
 ;; Next idea -> Marking Processor. Given a timeline (empty vector), process a
 ;; sequence of hands and store the marked numbers in order of occurence. For
 ;; example, if the hand is [2 3 7 8], and the number 3 and 8 are in the (0, 1)
@@ -82,3 +89,7 @@
 ;; In other words, create a function that given a timeline, a board, and a hand,
 ;; returns an updated timeline. If there was a match, it should be appended to
 ;; the end of the timeline; otherwise, return the previous timeline.
+
+;; One of the final tasks is to determine whether, given a board timeline, the
+;; board has won the match. It involves detecting a victory by horizontal match
+;; and victory by vertical match.
